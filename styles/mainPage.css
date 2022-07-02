@@ -1,0 +1,81 @@
+/*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+.page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+    margin-left: -17rem;
+}
+
+#content.active {
+    width: 100%;
+    margin: 0;
+}
+
+.bg_musicVideo {
+
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -17rem;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #content {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content.active {
+        margin-left: 17rem;
+        width: calc(100% - 17rem);
+    }
+}
+
+.gallery_adjust {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+.gallery_adjust p {
+    text-align: center;
+    padding: 4px;
+    font-family: monospace;
+    background: #222;
+    color: #efefef;
+}
+.gallery_img{
+    transform: rotate(0);
+    transition: all ease 0.4s;
+}
+.gallery_img:hover{
+    transition: all ease 0.4s;
+}

@@ -2305,6 +2305,9 @@ select {
 .ml-1 {
   margin-left: 0.25rem;
 }
+.ml-17em {
+  margin-left: 17em;
+}
 
 .mt-2 {
   margin-top: 0.5rem;
@@ -2364,6 +2367,9 @@ select {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.-mb-24 { 
+  margin-bottom: -6rem;
 }
 
 .mt-8 {
@@ -2740,6 +2746,10 @@ select {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-8 {
@@ -3549,6 +3559,10 @@ select {
   width: 50%;
 }
 
+.w-1\/3 {
+  width: 33.33%;
+}
+
 .w-6\/12 {
   width: 50%;
 }
@@ -4156,4 +4170,16 @@ select {
 }
 
 @media (min-width: 1536px) {
+}
+
+
+.h-fill{
+  height: -webkit-fill-available;
+  height: stretch;
+}
+.w-fill{
+  width: -webkit-fill-available;
+}
+.h-fit{
+  height: fit-content;
 }
