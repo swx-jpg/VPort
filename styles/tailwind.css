@@ -24,6 +24,26 @@ Use a more readable tab size (opinionated).
 :root {
   -moz-tab-size: 4;
   tab-size: 4;
+  --color: #000;
+    --accent-color: #f00;
+    --link-color: #f00;
+    --surface-color: rgba(0, 0, 0, 0);
+    --background-color: #ffffff;
+    --grid-width: 1100px;
+    --default-color: #000;
+    --default-accent-color: #f00;
+    --default-link-color: #f00;
+    --font-family: Montserrat;
+    --secondary-font-family: Playfair Display;
+    --ui-width: 380px;
+    --cover-height: calc(100vh - 80px - 26px);
+    --cover-width: calc(100vw - var(--ui-width));
+    --site-gutter: 60px;
+    --site-margin: 0 60px;
+    --sidenav-width: 300px;
+    --container-width: var(--grid-width);
+    --container-height: 800px;
+
 }
 
 /**
@@ -34,6 +54,8 @@ Use a more readable tab size (opinionated).
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font: 10px "Avenir Next", "Avenir Next Pro", "Avenir";
+    -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -2305,9 +2327,7 @@ select {
 .ml-1 {
   margin-left: 0.25rem;
 }
-.ml-17em {
-  margin-left: 17em;
-}
+
 
 .mt-2 {
   margin-top: 0.5rem;
@@ -2772,6 +2792,10 @@ select {
   padding-right: 3rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -4183,3 +4207,12 @@ select {
 .h-fit{
   height: fit-content;
 }
+
+.border-black{
+  border-color: rgb(0 0 0);
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+

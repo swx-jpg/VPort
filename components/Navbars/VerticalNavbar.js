@@ -9,12 +9,12 @@ import Link from "next/link";
 
 export default function Navbar(props) {
   // const [navbarOpen, setNavbarOpen] = React.useState(false);
-  
+
 
   return (
     <>
-      <div class="vertical-nav shadow-xl bg-white" id="sidebar">
-        <div class="py-4 px-3 mb-4 bg-light">
+      <div class="vertical-nav shadow-xl bg-white px-4" id="sidebar">
+        <div class="py-4 mb-4 bg-light">
           <div class="media d-flex align-items-center">
             <div class="media-body">
               <Link href="/"><h4 class="m-0">Afonso Carvalho</h4></Link>
@@ -24,43 +24,33 @@ export default function Navbar(props) {
           </div>
         </div>
 
-        <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
 
         <ul class="nav flex-column bg-white mb-0">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic bg-light">
-              <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+          <Link href="/">
+            <li class="nav-item">
               Works
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
-              <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-              About
-            </a>
-          </li>
-          {/* <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
-              <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-              Services
-            </a>
-          </li> */}
+            </li>
+          </Link>
+          <Link href="/about">
+            <li class="nav-item">
+                About
+            </li>
+          </Link>
+
 
         </ul>
 
-        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Works</p>
+        <hr className="w-1/3 my-4 border-black" />
 
         <ul class="nav flex-column bg-white mb-0">
+          <Link href="/musicVideos">
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
-              <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
               Music Videos
-            </a>
           </li>
+          </Link>
           <Link href="/concertCoverage">
             <li class="nav-item">
-
-              <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
               Concert Coverage
             </li>
           </Link>

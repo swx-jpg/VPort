@@ -105,7 +105,7 @@ export default function concertCoverage() {
     <>
 
       <VerticalNavbar fixed />
-      <section className="header relative items-center flex pt-8 ml-17em">
+      <section className="header page-content relative items-center flex pt-8 ">
         <div className="container mx-auto items-center flex flex-wrap h-fill ">
           <div className="w-full contents px-8 ">
             <div className="w-1/2 mx-auto px-6 pb-6">

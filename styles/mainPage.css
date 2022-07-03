@@ -6,8 +6,8 @@
 */
 
 .vertical-nav {
-    min-width: 17rem;
-    width: 17rem;
+    min-width: 20rem;
+    width: 20rem;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -16,8 +16,8 @@
 }
 
 .page-content {
-    width: calc(100% - 17rem);
-    margin-left: 17rem;
+    width: calc(100% - 20rem);
+    margin-left: 20rem;
     transition: all 0.4s;
 }
 
@@ -79,3 +79,53 @@
 .gallery_img:hover{
     transition: all ease 0.4s;
 }
+
+.color_title{
+    color: rgb(207, 167, 140);
+}
+h2 {
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+    font-size: 25px;
+}
+h4 {
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    font-size: 20px;
+}
+p{
+    font-family: var(--secondary-font-family);
+    font-size: 20px;
+}
+.vertical-nav h4{ 
+    font-size: 4.07em;
+    font-family: Poppins;
+    line-height: 1.05em;
+    font-weight: 400;
+}
+.nav-item{
+    font-size: 2em;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    opacity: 0.5 !Important;
+  }
+  .nav-item{
+    opacity: 1;
+  }
+  .vertical-nav h4:hover{
+    cursor: pointer;
+  }
+  .bg_musicVideo:hover img{
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: all 0.4s;
+  cursor: pointer;
+  }
+  .bg_musicVideo img{
+    transition: all 0.4s;
+  }
+  .c_pointer{
+    cursor: pointer;
+  }
